@@ -1,0 +1,17 @@
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\bin\Debug\BD_Autovek_.exe.config
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\bin\Debug\BD_Autovek_.exe
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\bin\Debug\BD_Autovek_.pdb
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD-Autovek-.csproj.AssemblyReference.cache
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD-Autovek-.csproj.SuggestedBindingRedirects.cache
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.Properties.Resources.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD-Autovek-.csproj.GenerateResource.cache
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD-Autovek-.csproj.CoreCompileInputs.cache
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.exe
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.pdb
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.AuthorizationForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.ClientActionForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.ClientSearchForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.ClientAddForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.AddOrChangeAutoForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.CarsInformationForm.resources
+C:\Users\nikya\BD-Autovek-\BD-Autovek-\obj\Debug\BD_Autovek_.ChoosingDocumentForm.resources
