@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel\\Excel.App.csproj": {}
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel\\Excel.App.csproj": {}
   },
   "projects": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj": {
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj",
+        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj",
         "projectName": "Excel",
-        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj",
+        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj",
         "packagesPath": "C:\\Users\\honor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\obj\\",
+        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\honor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -58,14 +58,14 @@
         }
       }
     },
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel\\Excel.App.csproj": {
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel\\Excel.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel\\Excel.App.csproj",
+        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel\\Excel.App.csproj",
         "projectName": "Excel.App",
-        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel\\Excel.App.csproj",
+        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel\\Excel.App.csproj",
         "packagesPath": "C:\\Users\\honor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel\\obj\\",
+        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\honor\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -82,8 +82,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj": {
-                "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj"
+              "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj": {
+                "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj"
               }
             }
           }
@@ -116,6 +116,9 @@
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"

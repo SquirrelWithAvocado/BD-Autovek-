@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "i3XTC9w9NInAbatSSWLr+u3vxes0N7juosAvL7rSNWFgmWpmf+qaSU7EcxFCXag0M77H5QqS9Wudr3qmp+zG3g==",
+  "dgSpecHash": "1IfPZXphyTHQQUmfNvx0KO5J3YCgnCe7vck1L+opOpXuua0AMLnwGPLBemmIgqsvSWcGUBu7IX4zH2XY+1qY4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\Excel.Tests.csproj",
+  "projectFilePath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\Excel.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\honor\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
     "C:\\Users\\honor\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",

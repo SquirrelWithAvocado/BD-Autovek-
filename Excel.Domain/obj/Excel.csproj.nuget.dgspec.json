@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj": {}
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj": {
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj",
+        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj",
         "projectName": "Excel",
-        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\Excel.csproj",
+        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\Excel.csproj",
         "packagesPath": "C:\\Users\\honor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Domain\\obj\\",
+        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\honor\\AppData\\Roaming\\NuGet\\NuGet.Config",

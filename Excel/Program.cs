@@ -1,26 +1,23 @@
-﻿using System;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Excel.App
 {
-    class Program
+    static class Program
     {
-        public static void Main(string[] args)
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            Console.WriteLine("Start prog");
-            new UI().Run();
+            Application.SetHighDpiMode(HighDpiMode.SystemAware);
+            Application.EnableVisualStyles();
+            Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new AuthorizationForm());
         }
     }
 }
-
-//1) доменная логика(также известно как бизнес логика, бизнес правила, и доменное знанае) -
-//это логика, отвечающая за принятие важных для бизнеса решений.
-//2) остальные типы логики инструментируют решения, принимаемые доменной моделью и преобразуют их в побочные эффекты:
-//сохранение данных в хранилище, показ пользователю, или передача сторонним сервисам.
-//3) важно, отделять доменную логику от других видов логики, так как это позволяет сохранять кодовую базу более простой.
-
-// 1) (Печать) Агенский договор без зачета, акт приема передачи авто, акт сдачи услуг, отчет агента, доверенность, ДКП прямой прием
-// 2) (Печать) Агенский договор в зачет, акт приема передачи, акт сдачи услуг, отчет агента, доверенность, гарантийное письмо, дкп прямой прием
-// 3) 
-// 4)  Печает дкп прямой 3шт
-// 5) (Закрывашки): отчет агента БУХГ, акт сдачи услуг БУХГ
-// 6)

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\Excel.Tests.csproj": {}
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\Excel.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\Excel.Tests.csproj": {
+    "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\Excel.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\Excel.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\Excel.Tests.csproj",
         "projectName": "Excel.Tests",
-        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\Excel.Tests.csproj",
+        "projectPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\Excel.Tests.csproj",
         "packagesPath": "C:\\Users\\honor\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия\\Excel.Tests\\obj\\",
+        "outputPath": "C:\\Users\\honor\\source\\repos\\Excel — копия — копия\\Excel.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\honor\\AppData\\Roaming\\NuGet\\NuGet.Config",
