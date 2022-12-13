@@ -77,7 +77,7 @@
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Password";
             // 
-            // Form1
+            // AuthorizationForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
