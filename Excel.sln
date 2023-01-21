@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Excel", "Excel.Domain\Excel
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Tests", "ExcelTests\Excel.Tests.csproj", "{A04D599C-AE9D-4C26-AEB4-CCD89B6B8821}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "..\Client-Server\Server\Server.csproj", "{D95FAECC-334B-4A0E-B160-5E3CE9833AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Tests", "..\Client-Server\Server.Tests\Server.Tests.csproj", "{71A6203C-25B2-480A-B067-767B4A886F79}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
