@@ -13,7 +13,7 @@ namespace Excel.App
         private void button1_Click(object sender, EventArgs e)
         {
             // PutDataCar();
-            var fr2 = new CarsInformationForm(null,null,null,null,null);
+            var fr2 = new CarsInformationForm();
             fr2.Show();
             Hide();
         }

@@ -6,10 +6,9 @@ namespace Excel.App
     public partial class CarsInformationForm : Form
     {
         private readonly ChoosingDocumentForm _choosingDocumentForm;
-        public CarsInformationForm(string name, string surname, string yearBirth,
-            string passId, string registration)
+        public CarsInformationForm()
         {
-            _choosingDocumentForm = new ChoosingDocumentForm(name, surname, yearBirth, passId, registration);
+            _choosingDocumentForm = new ChoosingDocumentForm();
             InitializeComponent();
         }
 

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using Excel;
 
 namespace Excel.App
 {
@@ -37,13 +36,8 @@ namespace Excel.App
             var registration = textBox5.Text;
             PutDataClient(name, surname, yearBirth, passId, registration);
 
-            var temporaryName = "Олег";
-            var temporarySurname = "Олегович";
-            var temporaryYearBirth = "17.02.2000";
-            var temporaryPassId = "222";
-            var temporaryRegistration = "г. Екб ул. ыы";
-            var fr2 = new CarsInformationForm(temporaryName, temporarySurname, 
-                temporaryYearBirth, temporaryPassId, temporaryRegistration);
+
+            var fr2 = new CarsInformationForm();
             fr2.Show();
             Hide();
         }

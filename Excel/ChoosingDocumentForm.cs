@@ -9,10 +9,10 @@ namespace Excel.App
         private readonly AgencyPortfolio _agencyPortfolio;
         private readonly DocumentSettings _documentSettings;
         
-        public ChoosingDocumentForm(string name, string surname, string yearBirth,
-            string passId, string registration)
+        public ChoosingDocumentForm()
         {
-            _agencyPortfolio = new AgencyPortfolio(name, surname, yearBirth, passId, registration);
+            _agencyPortfolio = new AgencyPortfolio("l", "a", "d",
+            "k", "y");
             _documentSettings = new DocumentSettings();
             InitializeComponent();
         }
