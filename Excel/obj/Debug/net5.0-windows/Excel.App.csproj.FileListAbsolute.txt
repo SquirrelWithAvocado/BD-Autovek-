@@ -20,7 +20,6 @@ C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.Gen
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.AssemblyInfoInputs.cache
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.AssemblyInfo.cs
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.csproj.CoreCompileInputs.cache
-C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.csproj.CopyComplete
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.dll
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\ref\Excel.App.dll
 C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.pdb

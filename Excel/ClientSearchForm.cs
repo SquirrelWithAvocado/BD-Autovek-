@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace Excel.App
@@ -19,15 +20,25 @@ namespace Excel.App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // SearchClient();
+            var id = textBox1.Text;
+            SearchClient(id);
             var fr2 = new CarsInformationForm();
             fr2.Show();
             Hide();
         }
 
-        private void SearchClient()
+        private void SearchClient(string id)
         {
-            // MessageBox.Show("не найден клиент");
+            var (response, text) = HttpRequester.Get(@$"/clients/{id}");
+
+
+            if (response.IsSuccessStatusCode)
+            {
+                MessageBox.Show("Нашёл!");
+                var client = JsonSerializer.Deserialize<Client>(text);
+            }
+            else
+                MessageBox.Show("не найден клиент");
         }
     }
 }
