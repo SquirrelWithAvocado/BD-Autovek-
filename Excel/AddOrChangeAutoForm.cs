@@ -12,9 +12,15 @@ namespace Excel.App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            var fr2 = new CarsInformationForm();
+            // PutDataCar();
+            var fr2 = new CarsInformationForm(null,null,null,null,null);
             fr2.Show();
             Hide();
+        }
+
+        private void PutDataCar()
+        {
+            // Отправить данные авто в бд
         }
     }
 }

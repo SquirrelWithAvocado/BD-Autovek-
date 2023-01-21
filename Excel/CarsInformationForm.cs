@@ -5,15 +5,17 @@ namespace Excel.App
 {
     public partial class CarsInformationForm : Form
     {
-        public CarsInformationForm()
+        private readonly ChoosingDocumentForm _choosingDocumentForm;
+        public CarsInformationForm(string name, string surname, string yearBirth,
+            string passId, string registration)
         {
+            _choosingDocumentForm = new ChoosingDocumentForm(name, surname, yearBirth, passId, registration);
             InitializeComponent();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var fr2 = new ChoosingDocumentForm();
-            fr2.Show();
+            _choosingDocumentForm.Show();
             Hide();
         }
 

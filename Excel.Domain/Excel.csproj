@@ -22,4 +22,8 @@
     </COMReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Domain\ValueObject" />
+  </ItemGroup>
+
 </Project>

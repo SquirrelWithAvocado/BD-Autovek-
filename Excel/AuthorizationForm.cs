@@ -5,9 +5,10 @@ namespace Excel.App
 {
     public partial class AuthorizationForm : Form
     {
-
+        private readonly ClientActionForm _clientActionForm;
         public AuthorizationForm()
         {
+            _clientActionForm = new ClientActionForm();
             InitializeComponent();
         }
 
@@ -15,12 +16,21 @@ namespace Excel.App
         {
             var login = textBox1.Text;
             var password = textBox2.Text;
-            var fr2 = new ClientActionForm();
-            if (login == "Иванов" && password == "123") //надо добавить бд с логинами и паролями работников 
+            _clientActionForm.Show();
+            Hide();
+            var managerPasswordLogin = GetManagerPasswordLogin();
+            if (login == managerPasswordLogin[0] 
+                && password == managerPasswordLogin[1])
             {
-                fr2.Show();
+                _clientActionForm.Show();
                 Hide();
             }
+        }
+
+        private string[] GetManagerPasswordLogin()
+        {
+            // Получить логин и пароль сотрудника из бд
+            return new[] {"Иванов", "123"};
         }
     }
 }
