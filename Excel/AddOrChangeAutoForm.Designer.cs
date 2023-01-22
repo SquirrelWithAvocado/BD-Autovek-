@@ -1,4 +1,6 @@
 ﻿using System.ComponentModel; 
+using System.Drawing;
+
  
 namespace Excel.App 
 { 
@@ -31,6 +33,9 @@ namespace Excel.App
         /// </summary> 
         private void InitializeComponent() 
         { 
+            this.Icon = new Icon(@"img\Group-1.ico");
+
+            this.MaximizeBox = false;
             this.textBox5 = new System.Windows.Forms.TextBox(); 
             this.textBox4 = new System.Windows.Forms.TextBox(); 
             this.textBox3 = new System.Windows.Forms.TextBox(); 
@@ -174,6 +179,10 @@ namespace Excel.App
             this.label2.Size = new System.Drawing.Size(74, 22); 
             this.label2.TabIndex = 2; 
             this.label2.Text = "Выйти"; 
+            this.label2.ForeColor=Color.Red;
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+
+
             //  
             // label1 
             //  
@@ -287,7 +296,7 @@ this.label10.Size = new System.Drawing.Size(118, 23);
             this.Controls.Add(this.label3); 
             this.Controls.Add(this.panel1); 
             this.Name = "AddOrChangeAutoForm"; 
-            this.Text = "AddOrChangeAutoForm"; 
+            this.Text = "-BD-Autovek-";
             this.panel1.ResumeLayout(false); 
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit(); 
             this.ResumeLayout(false); 

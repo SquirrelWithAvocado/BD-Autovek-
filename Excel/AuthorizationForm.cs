@@ -12,7 +12,8 @@ namespace Excel.App
 
         public AuthorizationForm()
         {
-            ClientSize = new Size(810, 470);
+
+            ClientSize = new Size(716, 461);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             _clientActionForm = new ClientActionForm();
             _clientActionForm.FormClosed += delegate { Application.Exit(); };
@@ -41,6 +42,17 @@ namespace Excel.App
             {
                 MessageBox.Show("Мы таких не знаем, попробуйте ещё раз");
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var fr2 = new RegistrationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
+            fr2.Show();
+            Hide();
+            
         }
 
         private bool GetManagerPasswordLogin(string login, string password)

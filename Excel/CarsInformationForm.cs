@@ -12,7 +12,7 @@ namespace Excel.App
 
         public CarsInformationForm(Client curClient)
         {
-            ClientSize = new Size(810, 470);
+            ClientSize = new Size(716, 461);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             _curClient = curClient;
             _choosingDocumentForm = new ChoosingDocumentForm();

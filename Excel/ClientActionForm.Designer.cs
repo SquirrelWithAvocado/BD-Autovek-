@@ -1,4 +1,6 @@
 using System.ComponentModel;
+using System.Drawing;
+
 
 namespace Excel.App
 {
@@ -32,7 +34,11 @@ namespace Excel.App
         private void InitializeComponent()
         {
             
+            this.Icon = new Icon(@"img\Group-1.ico");
+
             this.MaximizeBox = false;
+
+            
             
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -87,6 +93,7 @@ namespace Excel.App
             this.label2.TabIndex = 2;
             this.label2.Text = "Выйти";
             this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.label2.ForeColor=Color.Red;
             // 
             // label1
             // 
@@ -115,7 +122,7 @@ namespace Excel.App
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "ClientActionForm";
-            this.Text = "ClientActionForm";
+            this.Text = "-BD-Autovek-";
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
