@@ -6,6 +6,8 @@
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9e06ad51_002D4a6d_002D4000_002D90af_002D9e379f1553a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AgencyPortfolio_CorrectRequest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::71A6203C-25B2-480A-B067-767B4A886F79::net6.0::Server_Tests.ConnectionTests.GetSomeInfo&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::07C2A528-6772-4A95-B725-CF8142DAD4AB::net6.0::Tests.DatabaseTests.AddDefaultClient&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
-&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
+&lt;/SessionState&gt;</s:String>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Excel_002EApp_002FClientAddForm/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/ResxEditorPersonal/Initialized/@EntryValue">True</s:Boolean></wpf:ResourceDictionary>

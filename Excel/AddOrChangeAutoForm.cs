@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 namespace Excel.App
 {
@@ -7,6 +9,8 @@ namespace Excel.App
     {
         public AddOrChangeAutoForm()
         {
+            ClientSize = new Size(810, 470);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
         }
 
@@ -14,6 +18,8 @@ namespace Excel.App
         {
             // PutDataCar();
             var fr2 = new CarsInformationForm();
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
             fr2.Show();
             Hide();
         }

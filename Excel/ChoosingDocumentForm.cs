@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Windows.Forms;
 using Excel.Infrastructure;
+using System.Drawing;
+
 
 namespace Excel.App
 {
@@ -11,6 +13,8 @@ namespace Excel.App
         
         public ChoosingDocumentForm()
         {
+            ClientSize = new Size(810, 470);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             //_agencyPortfolio = new AgencyPortfolio("l", "a", "d",
             //"k", "y");
             _documentSettings = new DocumentSettings();
@@ -20,6 +24,8 @@ namespace Excel.App
         private void label2_Click(object sender, EventArgs e)
         {
             var fr2 = new AuthorizationForm();
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
             fr2.Show();
             Hide();
         }
@@ -28,6 +34,8 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[1]);
             var fr2 = new AuthorizationForm();
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
             fr2.Show();
             Hide();
         }
@@ -36,6 +44,8 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[0]);
             var fr2 = new AuthorizationForm();
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
             fr2.Show();
             Hide();
         }
@@ -44,8 +54,14 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[2]);
             var fr2 = new AuthorizationForm();
+            fr2.StartPosition = FormStartPosition.Manual;
+            fr2.Location = Location;
             fr2.Show();
             Hide();
+        }
+        private void ChoosingDocumentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

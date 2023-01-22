@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excel.Tests", "ExcelTests\E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server", "..\Client-Server\Server\Server.csproj", "{D95FAECC-334B-4A0E-B160-5E3CE9833AEB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Server.Tests", "..\Client-Server\Server.Tests\Server.Tests.csproj", "{71A6203C-25B2-480A-B067-767B4A886F79}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{07C2A528-6772-4A95-B725-CF8142DAD4AB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,8 +33,10 @@ Global
 		{A04D599C-AE9D-4C26-AEB4-CCD89B6B8821}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D95FAECC-334B-4A0E-B160-5E3CE9833AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D95FAECC-334B-4A0E-B160-5E3CE9833AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{71A6203C-25B2-480A-B067-767B4A886F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{71A6203C-25B2-480A-B067-767B4A886F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C2A528-6772-4A95-B725-CF8142DAD4AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07C2A528-6772-4A95-B725-CF8142DAD4AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07C2A528-6772-4A95-B725-CF8142DAD4AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07C2A528-6772-4A95-B725-CF8142DAD4AB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
