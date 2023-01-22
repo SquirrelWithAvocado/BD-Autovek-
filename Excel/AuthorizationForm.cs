@@ -32,5 +32,15 @@ namespace Excel.App
             // Получить логин и пароль сотрудника из бд
             return new[] {"Иванов", "123"};
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

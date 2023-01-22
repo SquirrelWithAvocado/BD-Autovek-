@@ -63,3 +63,11 @@ C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel.Domain\obj\Debug\netco
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.csproj.CoreCompileInputs.cache
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.dll
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.pdb
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.csproj.AssemblyReference.cache
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.csproj.ResolveComReference.cache
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.AssemblyInfoInputs.cache
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.AssemblyInfo.cs
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.csproj.CoreCompileInputs.cache
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.dll
+C:\Users\98885\BD-Autovek-\Excel.Domain\obj\Debug\netcoreapp3.1\Excel.pdb

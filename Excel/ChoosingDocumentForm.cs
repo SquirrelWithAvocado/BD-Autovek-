@@ -47,5 +47,10 @@ namespace Excel.App
             fr2.Show();
             Hide();
         }
+
+        private void ChoosingDocumentForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
