@@ -34,10 +34,10 @@ namespace Excel.App
             var registration = textBox5.Text;
             PutDataClient(name, surname, yearBirth, passId, registration);
 
-            var fr2 = new CarsInformationForm();
+            
+            var fr2 = new CarsInformationForm(null);
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
-            var fr2 = new CarsInformationForm(null);
             fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();

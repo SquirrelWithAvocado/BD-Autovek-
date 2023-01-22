@@ -20,10 +20,7 @@ namespace Excel.App
             InitializeComponent();
         }
 
-        private void FillCarsList()
-        {
-            CarsList.Items.Add(_curClient);
-        }
+
 
         private void button3_Click(object sender, EventArgs e)
         {

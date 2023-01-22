@@ -7,6 +7,7 @@ namespace Tests
     [TestFixture]
     public class DatabaseTests
     {
+        public MySqlUserRepository DbUserRepository;
         public MySqlContext DbContext;
         public MySqlRepository DbRepository;
         public Client DefaultClient;
@@ -57,5 +58,13 @@ namespace Tests
             DbContext.DeleteData();
             Assert.True(true);
         }
+        [Test]
+        public void AddDefaultUser()
+        {
+            
+            var user = new User { Login = "dragon4738", Password = "49038l" };
+            DbUserRepository.Add(user);
+        }
+        
     }
 }
