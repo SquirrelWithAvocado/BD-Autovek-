@@ -10,7 +10,7 @@ namespace Excel.App
     {
         public ClientAddForm()
         {
-            ClientSize = new Size(810, 470);
+            ClientSize = new Size(716, 461);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
         }

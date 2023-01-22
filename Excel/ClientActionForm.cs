@@ -13,6 +13,7 @@ namespace Excel.App
             InitializeComponent();
         }
         
+
         private void label2_Click(object sender, EventArgs e)
         {
             var fr2 = new AuthorizationForm();

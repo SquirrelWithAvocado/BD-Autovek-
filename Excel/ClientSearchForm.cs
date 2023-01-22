@@ -2,6 +2,8 @@
 using System.Net.Http;
 using System.Text.Json;
 using System.Windows.Forms;
+using System.Drawing;
+
 
 namespace Excel.App
 {
@@ -9,6 +11,8 @@ namespace Excel.App
     {
         public ClientSearchForm()
         {
+            ClientSize = new Size(716, 461);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
         }
 

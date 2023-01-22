@@ -13,7 +13,7 @@ namespace Excel.App
         
         public ChoosingDocumentForm()
         {
-            ClientSize = new Size(810, 470);
+            ClientSize = new Size(716, 461);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             //_agencyPortfolio = new AgencyPortfolio("l", "a", "d",
             //"k", "y");
