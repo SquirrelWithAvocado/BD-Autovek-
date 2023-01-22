@@ -1,1 +1,0 @@
-2023-01-22 23:31:58.2984|INFO|Server.MySqlUserRepository|Added user: dragon4738

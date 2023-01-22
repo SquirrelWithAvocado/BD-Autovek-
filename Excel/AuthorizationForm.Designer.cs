@@ -29,8 +29,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MaximizeBox = false;
-
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -71,6 +69,7 @@
             this.textBox1.Size = new System.Drawing.Size(208, 23);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Login";
+            this.textBox1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.textBox1_MouseClick);
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
@@ -81,6 +80,7 @@
             this.textBox2.Size = new System.Drawing.Size(208, 23);
             this.textBox2.TabIndex = 4;
             this.textBox2.Text = "Password";
+            this.textBox2.Click += new System.EventHandler(this.textBox2_Click);
             // 
             // AuthorizationForm
             // 
@@ -92,6 +92,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.MaximizeBox = false;
             this.Name = "AuthorizationForm";
             this.Tag = "Button";
             this.Text = "Form1";

@@ -10,11 +10,9 @@ namespace Excel.App
         public ClientActionForm()
         {
             ClientSize = new Size(810, 470);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
             InitializeComponent();
         }
         
-
         private void label2_Click(object sender, EventArgs e)
         {
             var fr2 = new AuthorizationForm();

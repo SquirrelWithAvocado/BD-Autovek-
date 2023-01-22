@@ -7,21 +7,24 @@ namespace Excel.App
 {
     public partial class AuthorizationForm : Form
     {
-        
+        private bool textBox1HasClicked;
+        private bool textBox2HasClicked;
         private readonly ClientActionForm _clientActionForm;
 
         public AuthorizationForm()
         {
+            textBox1HasClicked = false;
+            textBox2HasClicked = false;
             ClientSize = new Size(810, 470);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             _clientActionForm = new ClientActionForm();
             _clientActionForm.FormClosed += delegate { Application.Exit(); };
+
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
 
 
-        
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -61,6 +64,23 @@ namespace Excel.App
         {
 
         }
-        
+
+        private void textBox1_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (!textBox1HasClicked)
+            {
+                textBox1.Clear();
+                textBox1HasClicked = true;
+            }
+        }
+
+        private void textBox2_Click(object sender, EventArgs e)
+        {
+            if (!textBox2HasClicked)
+            {
+                textBox2.Clear();
+                textBox2HasClicked = true;
+            }
+        }
     }
 }

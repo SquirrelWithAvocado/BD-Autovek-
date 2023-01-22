@@ -57,10 +57,8 @@ namespace Excel.App
                 var client = new Client
                 {
                     Id = passId,
-                    BirthDate = yearBirth,
                     Name = name,
                     Surname = surname,
-                    Registration = registration
                 };
                 
                 var respMsg = HttpRequester.SendPost(

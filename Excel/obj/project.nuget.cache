@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KtciqEQAB13jC5E7pY+7nSD7GSYJB3VWCpkZ62ZEcC+GgNz+CT8/qZVn02jXahf9wpjIS1mD5KXCam9TQ5E/7A==",
+  "dgSpecHash": "iB7Ch3cNvjVzyfCvevhgMFL/epgUUnvTAbcDFloJc7pztr65a1ziZiTZ38yRTZEGEIjWiRpXvf89dawEJlYI4g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\nikya\\BD-Autovek-\\Excel\\Excel.App.csproj",
+  "projectFilePath": "C:\\Users\\Алексей\\BD-Autovek-\\Excel\\Excel.App.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\nikya\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.14\\microsoft.netcore.app.host.win-x64.5.0.14.nupkg.sha512"
+    "C:\\Users\\Алексей\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.12\\microsoft.netcore.app.host.win-x64.5.0.12.nupkg.sha512"
   ],
   "logs": []
 }

@@ -16,6 +16,7 @@ namespace Excel.App
         {
             var fr2 = new AuthorizationForm();
             fr2.FormClosed += delegate { Application.Exit(); };
+            fr2.StartPosition = FormStartPosition.Manual;
             fr2.Show();
             Hide();
         }
@@ -29,6 +30,7 @@ namespace Excel.App
             if (response.IsSuccessStatusCode)
             {
                 var fr2 = new CarsInformationForm(client);
+                fr2.StartPosition = FormStartPosition.Manual;
                 fr2.FormClosed += delegate { Application.Exit(); };
 
                 fr2.Show();
