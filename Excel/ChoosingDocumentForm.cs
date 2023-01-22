@@ -20,6 +20,7 @@ namespace Excel.App
         private void label2_Click(object sender, EventArgs e)
         {
             var fr2 = new AuthorizationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -28,6 +29,7 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[1]);
             var fr2 = new AuthorizationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -36,6 +38,7 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[0]);
             var fr2 = new AuthorizationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -44,6 +47,7 @@ namespace Excel.App
         {
             //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[2]);
             var fr2 = new AuthorizationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }

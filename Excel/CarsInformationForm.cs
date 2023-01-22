@@ -6,10 +6,19 @@ namespace Excel.App
     public partial class CarsInformationForm : Form
     {
         private readonly ChoosingDocumentForm _choosingDocumentForm;
-        public CarsInformationForm()
+        private Client _curClient;
+
+        public CarsInformationForm(Client curClient)
         {
+            _curClient = curClient;
             _choosingDocumentForm = new ChoosingDocumentForm();
+            _choosingDocumentForm.FormClosed += delegate { Application.Exit(); };
             InitializeComponent();
+        }
+
+        private void FillCarsList()
+        {
+            CarsList.Items.Add(_curClient);
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -21,6 +30,7 @@ namespace Excel.App
         private void button1_Click(object sender, EventArgs e)
         {
             var fr2 = new AddOrChangeAutoForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -28,6 +38,7 @@ namespace Excel.App
         private void button2_Click(object sender, EventArgs e)
         {
             var fr2 = new AddOrChangeAutoForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -35,8 +46,14 @@ namespace Excel.App
         private void label2_Click(object sender, EventArgs e)
         {
             var fr2 = new AuthorizationForm();
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
+        }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

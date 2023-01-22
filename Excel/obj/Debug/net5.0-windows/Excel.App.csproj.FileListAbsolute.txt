@@ -51,3 +51,4 @@ C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel\obj\Debug\net5.0-windo
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel\obj\Debug\net5.0-windows\ref\Excel.App.dll
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.pdb
 C:\Users\honor\source\repos\BD-Autovek-\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.genruntimeconfig.cache
+C:\Users\Алексей\BD-Autovek-\Excel\obj\Debug\net5.0-windows\Excel.App.Properties.Resources.resources

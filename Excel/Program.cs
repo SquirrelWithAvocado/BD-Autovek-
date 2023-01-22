@@ -11,7 +11,11 @@ namespace Excel.App
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AuthorizationForm());
+
+            var authForm = new AuthorizationForm();
+            authForm.FormClosed += delegate { Application.Exit(); };
+            authForm.Show();
+            Application.Run();
         }
     }
 }

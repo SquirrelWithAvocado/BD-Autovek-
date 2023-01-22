@@ -9,6 +9,7 @@ namespace Excel.App
         public AuthorizationForm()
         {
             _clientActionForm = new ClientActionForm();
+            _clientActionForm.FormClosed += delegate { Application.Exit(); };
             InitializeComponent();
         }
 
