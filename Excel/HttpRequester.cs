@@ -29,7 +29,7 @@ namespace Excel.App
             return (response, text);
         }
 
-        public static void SendPost(string content, string prefix)
+        public static HttpResponseMessage SendPost(string content, string prefix)
         {
             var client = new HttpClient(_handler, false);
             var httpContent = new StringContent(content);
@@ -37,6 +37,8 @@ namespace Excel.App
             client.Dispose();   
             
             Console.WriteLine($"Get post response with code: {postResp.StatusCode}");
+
+            return postResp;
         }
     }
 }

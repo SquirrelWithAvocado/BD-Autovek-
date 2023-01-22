@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.Json;
 using System.Windows.Forms;
 
 namespace Excel.App
@@ -19,23 +20,12 @@ namespace Excel.App
 
         private void button1_Click(object sender, EventArgs e)
         {
-            // var completedFields = false;
-            // while (!completedFields)
-            // {
-            //     var name = textBox1.Text;
-            //     var surname = textBox2.Text;
-            //     var yearBirth = textBox3.Text;
-            //     var passId = textBox4.Text;
-            //     var registration = textBox5.Text;
-            //     completedFields = PutDataClient(name, surname, yearBirth, passId, registration);
-            // }
             var name = textBox1.Text;
             var surname = textBox2.Text;
             var yearBirth = textBox3.Text;
             var passId = textBox4.Text;
             var registration = textBox5.Text;
             PutDataClient(name, surname, yearBirth, passId, registration);
-
 
             var fr2 = new CarsInformationForm();
             fr2.Show();
@@ -50,10 +40,32 @@ namespace Excel.App
                 || passId == "" || registration == "")
             {
                 MessageBox.Show("Одно из полей не заполнено!");
-                // button1_Click(null,null);
-                // return false;
             }
-            // return true;
+            else
+            {
+                var client = new Client
+                {
+                    Id = passId,
+                    BirthDate = yearBirth,
+                    Name = name,
+                    Surname = surname,
+                    Registration = registration
+                };
+                
+                var respMsg = HttpRequester.SendPost(
+                    JsonSerializer.Serialize(client),
+                    @"clients"
+                );
+
+                if (respMsg.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Client is added!");
+                }
+                else
+                {
+                    MessageBox.Show($"Operation failed, status code: {respMsg.StatusCode}");
+                }
+            }
         }
     }
 }

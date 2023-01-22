@@ -12,9 +12,13 @@ namespace Excel.App
         public string Name { get; set; }
         public string Surname { get; set; }
         public string Patronymic { get; set; }
-        
+
+        public string BirthDate { get; set; }
         public string Registration { get; set; }
-        
+
+        public string TelephoneNum { get; set; }
+        public string PassportData { get; set; }
+
         public List<Operation> Operations { get; set; }
         public List<Car> Cars { get; set; }
     }
