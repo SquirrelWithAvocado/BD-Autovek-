@@ -26,6 +26,7 @@ namespace Excel.App
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -36,6 +37,7 @@ namespace Excel.App
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -46,6 +48,7 @@ namespace Excel.App
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }
@@ -56,6 +59,7 @@ namespace Excel.App
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
+            fr2.FormClosed += delegate { Application.Exit(); };
             fr2.Show();
             Hide();
         }

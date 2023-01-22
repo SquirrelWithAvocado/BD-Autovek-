@@ -1,7 +1,7 @@
-﻿using System;
+using System;
 using System.Drawing;
 using System.Windows.Forms;
-using System.Threading;
+
 
 namespace Excel.App
 {
@@ -9,12 +9,13 @@ namespace Excel.App
     {
         
         private readonly ClientActionForm _clientActionForm;
-        private Thread th;
+
         public AuthorizationForm()
         {
             ClientSize = new Size(810, 470);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             _clientActionForm = new ClientActionForm();
+            _clientActionForm.FormClosed += delegate { Application.Exit(); };
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
@@ -28,22 +29,27 @@ namespace Excel.App
             var password = textBox2.Text;
             _clientActionForm.StartPosition = FormStartPosition.Manual;
             _clientActionForm.Location = Location;
-            _clientActionForm.Show();
-            Hide();
-            var managerPasswordLogin = GetManagerPasswordLogin();
-            if (login == managerPasswordLogin[0] 
-                && password == managerPasswordLogin[1])
+
+            var successAuth = GetManagerPasswordLogin(login, password);
+            if (successAuth)
             {
                 _clientActionForm.Show();
                 this.Hide();
                 
             }
+            else
+            {
+                MessageBox.Show("Мы таких не знаем, попробуйте ещё раз");
+            }
         }
 
-        private string[] GetManagerPasswordLogin()
+        private bool GetManagerPasswordLogin(string login, string password)
         {
-            // Получить логин и пароль сотрудника из бд
-            return new[] {"Иванов", "123"};
+            var authContent = $"{login}={password}";
+            HttpRequester.AuthHeader = authContent;
+            var response = HttpRequester.Get("/");
+            
+            return response.Item1.IsSuccessStatusCode;
         }
         
         private void textBox1_TextChanged(object sender, EventArgs e)
@@ -57,5 +63,4 @@ namespace Excel.App
         }
         
     }
-    
 }
