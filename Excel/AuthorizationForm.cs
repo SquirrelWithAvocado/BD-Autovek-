@@ -16,21 +16,26 @@ namespace Excel.App
         {
             var login = textBox1.Text;
             var password = textBox2.Text;
-            _clientActionForm.Show();
-            Hide();
-            var managerPasswordLogin = GetManagerPasswordLogin();
-            if (login == managerPasswordLogin[0] 
-                && password == managerPasswordLogin[1])
+            
+            var successAuth = GetManagerPasswordLogin(login, password);
+            if (successAuth)
             {
                 _clientActionForm.Show();
                 Hide();
             }
+            else
+            {
+                MessageBox.Show("Мы таких не знаем, попробуйте ещё раз");
+            }
         }
 
-        private string[] GetManagerPasswordLogin()
+        private bool GetManagerPasswordLogin(string login, string password)
         {
-            // Получить логин и пароль сотрудника из бд
-            return new[] {"Иванов", "123"};
+            var authContent = $"{login}={password}";
+            HttpRequester.AuthHeader = authContent;
+            var response = HttpRequester.Get("/");
+            
+            return response.Item1.IsSuccessStatusCode;
         }
     }
 }
