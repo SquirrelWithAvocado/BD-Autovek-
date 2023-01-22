@@ -129,6 +129,7 @@ namespace Excel.App
             this.label6.TabIndex = 7;
             this.label6.Text = "Серия и номер \r\nпаспорта";
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // label7
             // 
