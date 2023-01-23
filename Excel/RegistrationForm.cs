@@ -31,9 +31,5 @@ namespace Excel.App
             fr2.Show();
             Hide();
         }
-
-        
-        
-
     }
 }

@@ -1,13 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1aac231c_002D42e0_002D4d35_002D8c56_002D26bc488c2dc3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AgencyPortfolioTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=1aac231c_002D42e0_002D4d35_002D8c56_002D26bc488c2dc3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AgencyPortfolioTest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::FFE220E3-C343-483A-9CD0-E39162AD6C47::net6.0::Server_Tests.DatabaseTests.DeleteDataBase&lt;/TestId&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::FFE220E3-C343-483A-9CD0-E39162AD6C47::net6.0::Server_Tests.DatabaseTests.AddDefaultClient&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::D01C72A9-5251-468D-A755-A7901E5D6310::net6.0::Server_Tests.DatabaseTests.AddDefaultUser&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9e06ad51_002D4a6d_002D4000_002D90af_002D9e379f1553a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="AgencyPortfolio_CorrectRequest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=9e06ad51_002D4a6d_002D4000_002D90af_002D9e379f1553a6/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="AgencyPortfolio_CorrectRequest" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;NUnit3x::FFE220E3-C343-483A-9CD0-E39162AD6C47::net6.0::Server_Tests.DatabaseTests.DeleteDataBase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::D01C72A9-5251-468D-A755-A7901E5D6310::net6.0::Server_Tests.DatabaseTests.AddDefaultUser&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::D01C72A9-5251-468D-A755-A7901E5D6310::net6.0::Server_Tests.DatabaseTests.DeleteDataBase&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;NUnit3x::D01C72A9-5251-468D-A755-A7901E5D6310::net6.0::Server_Tests.DatabaseTests.AddDefaultClient&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:Boolean x:Key="/Default/ResxEditorPersonal/CheckedGroups/=Excel_002EApp_002FAddOrChangeAutoForm/@EntryIndexedValue">True</s:Boolean>

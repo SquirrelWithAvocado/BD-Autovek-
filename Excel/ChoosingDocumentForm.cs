@@ -2,21 +2,22 @@
 using System.Windows.Forms;
 using Excel.Infrastructure;
 using System.Drawing;
+using Excel.Domain.Entities;
+using Excel.ExcelApplication;
 
 
 namespace Excel.App
 {
     public partial class ChoosingDocumentForm : Form
     {
-        //private readonly AgencyPortfolio _agencyPortfolio;
+        private readonly AgencyPortfolio _agencyPortfolio;
         private readonly DocumentSettings _documentSettings;
         
-        public ChoosingDocumentForm()
+        public ChoosingDocumentForm(Client client)
         {
             ClientSize = new Size(716, 461);
             FormBorderStyle = FormBorderStyle.FixedSingle;
-            //_agencyPortfolio = new AgencyPortfolio("l", "a", "d",
-            //"k", "y");
+            _agencyPortfolio = new AgencyPortfolio(client);
             _documentSettings = new DocumentSettings();
             InitializeComponent();
         }
@@ -33,7 +34,7 @@ namespace Excel.App
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[1]);
+            _agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[1]);
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
@@ -44,7 +45,7 @@ namespace Excel.App
 
         private void button2_Click(object sender, EventArgs e)
         {
-            //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[0]);
+            _agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[0]);
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;
@@ -55,7 +56,7 @@ namespace Excel.App
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //_agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[2]);
+            _agencyPortfolio.CreateAgencyPortfolio(_documentSettings.ContractTypes[2]);
             var fr2 = new AuthorizationForm();
             fr2.StartPosition = FormStartPosition.Manual;
             fr2.Location = Location;

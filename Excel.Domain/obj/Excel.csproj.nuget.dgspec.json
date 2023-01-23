@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Алексей\\BD-Autovek-\\Excel.Domain\\Excel.csproj": {}
+    "C:\\Users\\honor\\source\\repos\\3.0 База данных ООО Автовек\\BD-Autovek-\\Excel.Domain\\Excel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Алексей\\BD-Autovek-\\Excel.Domain\\Excel.csproj": {
+    "C:\\Users\\honor\\source\\repos\\3.0 База данных ООО Автовек\\BD-Autovek-\\Excel.Domain\\Excel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Алексей\\BD-Autovek-\\Excel.Domain\\Excel.csproj",
+        "projectUniqueName": "C:\\Users\\honor\\source\\repos\\3.0 База данных ООО Автовек\\BD-Autovek-\\Excel.Domain\\Excel.csproj",
         "projectName": "Excel",
-        "projectPath": "C:\\Users\\Алексей\\BD-Autovek-\\Excel.Domain\\Excel.csproj",
-        "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Алексей\\BD-Autovek-\\Excel.Domain\\obj\\",
+        "projectPath": "C:\\Users\\honor\\source\\repos\\3.0 База данных ООО Автовек\\BD-Autovek-\\Excel.Domain\\Excel.csproj",
+        "packagesPath": "C:\\Users\\honor\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\honor\\source\\repos\\3.0 База данных ООО Автовек\\BD-Autovek-\\Excel.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\honor\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -58,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

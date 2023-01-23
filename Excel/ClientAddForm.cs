@@ -2,6 +2,7 @@
 using System.Text.Json;
 using System.Windows.Forms;
 using System.Drawing;
+using Excel.Domain.Entities;
 
 
 namespace Excel.App
@@ -45,8 +46,6 @@ namespace Excel.App
 
         private void PutDataClient(string name, string surname, string yearBirth, string passId, string registration)
         {
-            // Отправить данные клиента в бд
-            // Проверить поля, если не заполнили, то на след окно не переходим
             if (name == "" || surname == "" || yearBirth == ""
                 || passId == "" || registration == "")
             {

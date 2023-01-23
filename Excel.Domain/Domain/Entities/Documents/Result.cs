@@ -1,6 +1,7 @@
 ﻿using System;
 using Excel.Domain.Services;
 using Microsoft.Office.Interop.Excel;
+using System.Collections.Generic;
 
 namespace Excel.Domain.Entities.Documents
 {
@@ -9,49 +10,76 @@ namespace Excel.Domain.Entities.Documents
         private string[] SheetsExcel { get; }
         private object[] DataSheet1 { get; }
         private object[] DataSheet2 { get; }
-        private static DateTime Today { get; }
+        
+        private static readonly DateTime DateTime = new DateTime();
 
-        public Result(string name, string surname, string yearBirth,
-            string passId, string registration, int indexDocument)
+        public Result(string name, string surname, string patronymic, string placeOfBirth,
+            string dateOfBirth, int indexDocument, List<Data> passport, List<Car> cars)
         {
             IndexDocument = indexDocument;
             
             DataSheet1 = new object[]
             {
                 null,
-                null,
-                "Result",
-                passId,
-                Today,
-                null,
-                name + " " + surname,
-                name + " " + surname,
-                yearBirth,
-                yearBirth,
-                null,
-                registration,
-                registration,
-                registration,
-                registration,
-                registration,
-                89123,
-                registration,
-                null,
-                12223
+                null, // Данные о продаже
+                "Екатеринбуог",
+                indexDocument,
+                DateTime,
+                surname + " " + name + " " + patronymic,
+                "?",
+                "?",
+                "?",
+                "?"
             };
-            DataSheet2 = new object[]
-            {
-                null,
-                null,
-                "Екатеринбург",
-                Today,
-                null,
-                name + " " + surname,
-                name + " " + surname,
-                yearBirth,
-                registration
+            
+            DataSheet2 = new object[] { 
+                null, 
+                null, // Данные Агентского Договора не сделал
+                "Екатеринбург", 
+                indexDocument,
+                DateTime,
+                null, // Данные Клиента / Продавца
+                surname + " " + name[0] + "." + patronymic[0] + ".",
+                surname + " " + name + " " + patronymic,
+                dateOfBirth,
+                placeOfBirth,
+                null, // Паспортные Данные
+                passport[0].Series,
+                passport[0].Number,
+                passport[0].WhereIssued,
+                passport[0].DateOfIssue,
+                passport[0].DivisionCode,
+                passport[0].PhoneNumber,
+                passport[0].Registration,
+                null, // Данные Автомобиля
+                cars[0].VIN, 
+                cars[0].Model,
+                cars[0].TypeCar,
+                cars[0].CategoryCar,
+                cars[0].YearManufacture,
+                cars[0].Chassis,
+                cars[0].Cabin,
+                cars[0].ColorCabin,
+                cars[0].PassportCar,
+                cars[0].Mileage,
+                null, // Стоимость автомобиля по Агентскому договору
+                "?",
+                "?",
+                null, // Данные для выставления счёта
+                "?", 
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
             };
-            SheetsExcel = new[] {"Данные Клиента Продавца и Авто","Данные Продажи"};
+            SheetsExcel = new[] {"Закрывашки", "Данные Клиента Продавца и Авто"};
     }
 
         protected override void WriteTo(Sheets sheets)
@@ -63,7 +91,7 @@ namespace Excel.Domain.Entities.Documents
                 foreach (var sheet in SheetsExcel)
                 {
                     var worksheet = (Worksheet)sheets.Item[sheet];
-                    if (sheet == "Данные Клиента Продавца и Авто")
+                    if (sheet == "Закрывашки")
                     {
                         try
                         { 
@@ -73,7 +101,7 @@ namespace Excel.Domain.Entities.Documents
                                     worksheet.Cells[row, 2] = DataSheet1[row];
                             } 
                         }
-                        catch (NullReferenceException e) { throw new NullDataException(e); }
+                        catch (NullReferenceException e) { throw new Infrastructure.NullDataException(e); }
                     }
                     else
                     {
@@ -81,29 +109,15 @@ namespace Excel.Domain.Entities.Documents
                         {
                             for (var row = 1; row < DataSheet2.Length - 1; row++)
                             {
-                                if (DataSheet2[row] != null)
+                                if (DataSheet1[row] != null)   
                                     worksheet.Cells[row, 2] = DataSheet2[row];
                             }
                         }
-                        catch (NullReferenceException e) { throw new NullDataException(e); }
+                        catch (NullReferenceException e) { throw new Infrastructure.NullDataException(e); }
                     }
                 }
             }
-            catch (NullReferenceException e) { throw new NullSheetException(e); }
+            catch (NullReferenceException e) { throw new Infrastructure.NullSheetException(e); }
         }
-    }
-
-    internal class NullDataException : Exception
-    {
-        public NullDataException(Exception nullDataException) :
-            base("Документ не может быть заполнен, так как значение данных пустое", 
-                nullDataException) { }
-    }
-    
-    internal class NullSheetException : Exception
-    {
-        public NullSheetException(Exception nullSheetException) :
-            base("Документ не может быть заполнен, так как нет значения листов excel", 
-                nullSheetException) { }
     }
 }

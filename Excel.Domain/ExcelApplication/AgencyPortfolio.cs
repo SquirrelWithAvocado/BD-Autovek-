@@ -1,33 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
 using Excel.Domain.Entities;
+using Excel.Infrastructure;
+using Microsoft.Office.Interop.Excel;
+using System.Collections.Generic;
 using Excel.Domain.Entities.Documents;
 using Excel.Domain.Services;
 
-namespace Excel.Infrastructure
+namespace Excel.ExcelApplication
 {
     public class AgencyPortfolio : Client
     {
-        private readonly HashSet<Document> _documents = new HashSet<Document>();
         private readonly DocumentSettings _documentSettings = new DocumentSettings();
-
-        public AgencyPortfolio(string name, string surname, string yearBirth,
-            string passId, string registration) : 
-            base(name, surname, yearBirth, passId, registration)
+        private readonly HashSet<Document> _documents = new HashSet<Document>();
+        private readonly Client _client;
+        
+        public AgencyPortfolio(Client client)
         {
-            _documents.Add(new SaleDirect(name, surname, yearBirth, passId, registration, indexDocument:0));
-            _documents.Add(new TradeIN(name, surname, yearBirth, passId, registration, indexDocument:1));
-            _documents.Add(new Result(name, surname, yearBirth, passId, registration, indexDocument:2));
+            _client = client;
+            _documents.Add(new SaleDirect(_client.Name, _client.Surname, _client.Patronymic, _client.PlaceOfBirth, 
+                _client.DateOfBirth, indexDocument:0, _client.Passport, _client.Cars));
+            _documents.Add(new TradeIN(_client.Name, _client.Surname, _client.Patronymic, _client.PlaceOfBirth, 
+                _client.DateOfBirth, indexDocument:1, _client.Passport, _client.Cars));
+            _documents.Add(new Result(_client.Name, _client.Surname, _client.Patronymic, _client.PlaceOfBirth, 
+                _client.DateOfBirth, indexDocument:2, _client.Passport, _client.Cars));
         }
 
         public void CreateAgencyPortfolio(int typeContract)
         {
             try
-            { 
+            {
                 var countFolders = FilesHandler.GetCountFolders(_documentSettings);
                 var newAgencyPortfolio = FilesHandler.GetPathFile
-                    (_documentSettings, Name, Surname, _documents, countFolders);
-
+                    (_documentSettings, _client.Name, _client.Surname, _documents, countFolders);
+            
                 if (_documentSettings.ContractTypes.Length != _documents.Count)
                 { throw new DocumentLossException(null); } 
                 CreateDocument(typeContract, newAgencyPortfolio);
@@ -38,7 +43,7 @@ namespace Excel.Infrastructure
                 throw;
             }
         }
-
+    
         private void CreateDocument(int typeContract, string newAgencyPortfolio)
         {
             foreach (var document in _documents)
@@ -49,12 +54,5 @@ namespace Excel.Infrastructure
                     document.Dispose();
             }
         }
-    }
-
-    internal class DocumentLossException : Exception
-    {
-        public DocumentLossException(Exception documentLossException) :
-            base("Нарушена целостность HashSet<Document> _documents",
-                documentLossException) { }
     }
 }

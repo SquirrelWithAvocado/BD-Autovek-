@@ -1,6 +1,7 @@
 using System;
 using System.Windows.Forms;
 using System.Drawing;
+using Excel.Domain.Entities;
 
 
 namespace Excel.App
@@ -31,7 +32,7 @@ namespace Excel.App
 
         private void button3_Click(object sender, EventArgs e)
         {
-            var _choosingDocumentForm = new ChoosingDocumentForm();
+            var _choosingDocumentForm = new ChoosingDocumentForm(_curClient);
             _choosingDocumentForm.FormClosed += delegate { Application.Exit(); };
             _choosingDocumentForm.StartPosition = FormStartPosition.Manual;
             _choosingDocumentForm.Location = Location;

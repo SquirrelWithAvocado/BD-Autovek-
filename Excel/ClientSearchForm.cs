@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Windows.Forms;
 using System.Drawing;
+using Excel.Domain.Entities;
 
 
 namespace Excel.App
@@ -50,7 +51,6 @@ namespace Excel.App
 
             if (response.IsSuccessStatusCode)
             {
-                MessageBox.Show("Нашёл!");
                 client = JsonSerializer.Deserialize<Client>(text);
             }
             else

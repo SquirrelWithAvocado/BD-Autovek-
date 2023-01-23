@@ -1,39 +1,94 @@
 ﻿using System;
 using Excel.Domain.Services;
 using Microsoft.Office.Interop.Excel;
+using System.Collections.Generic;
 
 namespace Excel.Domain.Entities.Documents
 {
     public class TradeIN : Document
     {
-        private string[] Data { get; }
-        private string SheetExcel { get; }
-        private int MaxRow { get; }
+        private string[] SheetsExcel { get; }
+        private object[] DataSheet1 { get; }
+        private object[] DataSheet2 { get; }
+        private static readonly DateTime DateTime = new DateTime();
 
-        public TradeIN(string name, string surname, string yearBirth,
-            string passId, string registration, int indexDocument)
+        public TradeIN(string name, string surname, string patronymic, string placeOfBirth,
+            string dateOfBirth, int indexDocument, List<Data> passport, List<Car> cars)
         {
             IndexDocument = indexDocument;
             
-            Data = new[] { "123" };
-            SheetExcel = "Данные Клиента Продавца и Авто"; 
-            MaxRow = 45;
+            DataSheet1 = new object[] {
+                null, 
+                null, // Данные Агентского Договора не сделал
+                "Екатеринбург", 
+                indexDocument, 
+                DateTime, 
+                null, // Данные Клиента / Продавца
+                surname + " " + name[0] + "." + patronymic[0] + ".",
+                surname + " " + name + " " + patronymic, 
+                dateOfBirth, 
+                placeOfBirth,
+                null, // Паспортные Данные
+                passport[0].Series,
+                passport[0].Number,
+                passport[0].WhereIssued,
+                passport[0].DateOfIssue,
+                passport[0].DivisionCode,
+                passport[0].PhoneNumber, 
+                passport[0].Registration,
+                null, // Данные Автомобиля
+                cars[0].VIN, 
+                cars[0].Model, 
+                cars[0].TypeCar, 
+                cars[0].CategoryCar, 
+                cars[0].YearManufacture, 
+                cars[0].Chassis, 
+                cars[0].Cabin, 
+                cars[0].ColorCabin, 
+                cars[0].PassportCar, 
+                cars[0].Mileage,
+                null, // Стоимость автомобиля по Агентскому договору
+                "?",
+                "?",
+                null, // Данные для выставления счёта
+                "?", 
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?",
+                "?"
+             };
+            SheetsExcel = new[] {"Данные Клиента Продавца и Авто"};
         }
 
         protected override void WriteTo(Sheets sheets)
         {
             Console.WriteLine("Into TradeIN");
-            
-            var worksheet = (Worksheet)sheets.get_Item(SheetExcel);
-            for (var row = 1; row <= MaxRow; row++)
+
+            try
             {
-                if (row != 32)
-                    worksheet.Cells[row, 2] = Data[0];
+                foreach (var sheet in SheetsExcel)
+                {
+                    var worksheet = (Worksheet)sheets.Item[sheet];
+
+                    try
+                    {
+                        for (var row = 1; row < DataSheet1.Length - 1; row++)
+                        {
+                            if (DataSheet1[row] != null) 
+                                worksheet.Cells[row, 2] = DataSheet1[row];
+                        }
+                    }
+                    catch (NullReferenceException e) { throw new Infrastructure.NullDataException(e); }
+                }
             }
+            catch (NullReferenceException e) { throw new Infrastructure.NullSheetException(e); }
         }
-        //public продажа/покупка по прямой договор: до 29 заполняется и заполняются данные продажи до 19 и печать 3 экз
-        // прием по прямому и ставим на комиссию: ДКП прямой полностью, ДКП прямой прием (при комиссии) (м б с комис может без)
-        // закрывашки: закрывашки
-        // трейд ин с пробегом: ДКП прямой, данные продажи,
     }
 }

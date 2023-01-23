@@ -24,8 +24,6 @@ namespace Excel.App
             StartPosition = FormStartPosition.CenterScreen;
         }
 
-
-        
         private void button1_Click(object sender, EventArgs e)
         {
             
@@ -39,11 +37,10 @@ namespace Excel.App
             {
                 _clientActionForm.Show();
                 this.Hide();
-                
             }
             else
             {
-                MessageBox.Show("Мы таких не знаем, попробуйте ещё раз");
+                MessageBox.Show("Неверный логин или пароль");
             }
         }
 
